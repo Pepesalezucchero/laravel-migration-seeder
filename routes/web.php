@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
+use App\Http\Controllers\Guest\TrainController;
 
-    return view('pages.index');
-});
+Route::get('/', [TrainController::class, 'index']);
